@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title> APLICATIVO DE ROLETAR DADO</title>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <center>
+        <h3>Escolha qual número de lados entre 6 e 1000 lados no seu dado e clique em "Randow Number" para que tire um
+            número aleatório</h3>
+        <h3>Você também pode escolher quantos dados jogar de uma vez</h3>
+        <input id="Lados" placeholder="Escolha o número de lados cdo seu dado" type="number">
+        <button class="btn btn-primary" id="randow" onclick="JogarDados()">Randow Number</button>
+        ValorDeDados
+        <input id="ValorDeDados" type= "number" placeholder="Escreva o numero de daods que você quer girar">
+        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        <h1>O resultado foi: </h1>
+        
+        <div id="resultadosDosDados">
+
+        </div>
+        
+        
+    </center>
+
+</body>
+<script src="main.js"></script>
+
+</html>
